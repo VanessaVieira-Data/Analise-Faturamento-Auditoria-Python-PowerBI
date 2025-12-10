@@ -25,11 +25,11 @@ A análise revelou que o **tamanho da equipe não é o único fator determinante
 
 | Área | Taxa de Produtividade | Ticket Médio Mensal | Top 5 Vendedores | Conclusão |
 | :--- | :---: | :---: | :---: | :--- |
-| **Administrativo** | **$242.31\%$** (Alta) | $\mathbf{R\$ 2.512,14}$ | 2 | Lidera em eficiência e qualidade (valor). |
-| **Operações** | $209.0\%$ (Média/Alta) | $\text{R\$ }2.477,81$ | 1 (Vendedor Líder) | Alto volume e melhor *benchmark* de talento. |
-| Financeiro | $233.0\%$ (Alta) | $\text{R\$ }2.392,50$ | 1 | Alta eficiência por funcionário. |
-| Logística | $190.0\%$ (Média) | $\text{R\$ }2.291,62$ | 1 | |
-| **Comercial** | $169.0\%$ (Baixa) | $\text{R\$ }2.466,82$ | 0 | **Ponto Crítico:** Baixa em todas as métricas. |
+| **Administrativo** | **242.31%** (Alta) | **R$ 2.512,14** | 2 | Lidera em eficiência e qualidade (valor). |
+| **Operações** | 209.0% (Média/Alta) | R$ 2.477,81 | 1 (Vendedor Líder) | Alto volume e melhor *benchmark* de talento. |
+| Financeiro | 233.0% (Alta) | R$ 2.392,50 | 1 | Alta eficiência por funcionário. |
+| Logística | 190.0% (Média) | R$ 2.291,62 | 1 | |
+| **Comercial** | 169.0% (Baixa) | R$ 2.466,82 | 0 | **Ponto Crítico:** Baixa em todas as métricas. |
 
 ### 🔑 Recomendação de Ação
 A área **Comercial** deve ser o foco da otimização. Recomenda-se a implementação de um programa de **Benchmarking Interno** que utilize os métodos e *pipelines* de vendas do Top Performer da **Operações** (ID 47) e as estratégias de negociação da área **Administrativo** para elevar a produtividade e o valor dos contratos do setor.
