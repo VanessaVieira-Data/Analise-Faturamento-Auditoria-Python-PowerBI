@@ -1,35 +1,45 @@
-# 🚀 PROJETO 1: Análise de Desempenho Multifatorial de Vendas por Área
+📊 Dashboard de Performance Multifatorial (Python & Power BI)
 
-## Sumário Executivo
-Este projeto de Análise de Dados focou na avaliação do desempenho de fechamento de contratos em cinco áreas da empresa, correlacionando as métricas de **Eficiência por Funcionário (Produtividade)**, **Talento Individual (Top Performers)** e **Qualidade Financeira (Ticket Médio)**.
+📋 Sobre o Projeto
+Este projeto representa uma análise end-to-end, unindo o poder de processamento do Python com a excelência visual do Power BI. A estrutura foi desenhada seguindo princípios de UX Design e a lógica da Pirâmide Invertida, onde o Sumário Executivo atua como o ponto de partida estratégico, seguido pelo detalhamento técnico.
 
-A análise revelou que o **tamanho da equipe não é o único fator determinante** para o sucesso, destacando a Área Comercial como o ponto mais crítico e a Área Operações como um *benchmark* de alta performance.
+🏗️ Metodologia e Governança de Dados
+Um diferencial deste projeto foi a fase de Conciliação e Auditoria de Dados:
 
-## 🎯 Objetivos da Análise
+Integridade Referencial: Identificou-se uma variação controlada entre o faturamento calculado em Python (R$ 5,62M) e o Power BI (R$ 5,52M). Essa diferença reflete critérios de filtragem mais rigorosos no dashboard para exibir apenas contratos com status de "Faturamento Confirmado".
 
-1.  **Avaliar a Eficiência (Volume):** Calcular a Taxa de Produtividade (Contratos Fechados por Funcionário) de cada área.
-2.  **Identificar Talentos:** Criar um ranking dos 5 colaboradores com mais contratos fechados (Top Performers).
-3.  **Avaliar Qualidade (Valor):** Calcular o Ticket Médio Mensal por Área e compará-lo com o Ticket Médio geral da empresa (R$ 2.502,56).
-4.  **Gerar Insights Acionáveis:** Propor uma estratégia para otimizar o desempenho da área Comercial, que se mostrou a de menor performance.
+Scalability & Flexibilidade: O uso de .merge(how='left') e .groupby().size() em Python garantiu que nenhum registro fosse perdido durante a fase de ETL, permitindo uma visão holística da base bruta antes da aplicação das regras de negócio no BI.
 
-## ⚙️ Metodologia Técnica
+📈 Visualização do Dashboard
+1. Sumário Executivo & Direcionais Estratégicos
+A "Home" do projeto foca em insights acionáveis.
 
-* **Linguagem:** Python
-* **Bibliotecas:** Pandas (para manipulação, agregação e junção de dados), Matplotlib (para visualização de dados).
-* **Técnicas:**
-    * Utilização de `pd.merge()` com `how='left'` e `how='inner'` para unir diferentes fontes de dados.
-    * Agregação de dados usando `pd.groupby()` para calcular médias (`.mean()`) e contagens (`.count()`).
-    * Criação de KPIs personalizados, como **Taxa de Produtividade** e **Ticket Médio por Área**.
+Insight: Identificamos que a plena integração dos 15 profissionais restantes pode elevar o faturamento anual para R$ 6,6 Milhões.
 
-## 📈 Principais Insights e Descobertas
+![Sumário Executivo](sumario_executivo.png)
 
-| Área | Taxa de Produtividade | Ticket Médio Mensal | Top 5 Vendedores | Conclusão |
-| :--- | :---: | :---: | :---: | :--- |
-| **Administrativo** | **242.31%** (Alta) | **R$ 2.512,14** | 2 | Lidera em eficiência e qualidade (valor). |
-| **Operações** | 209.0% (Média/Alta) | R$ 2.477,81 | 1 (Vendedor Líder) | Alto volume e melhor *benchmark* de talento. |
-| Financeiro | 233.0% (Alta) | R$ 2.392,50 | 1 | Alta eficiência por funcionário. |
-| Logística | 190.0% (Média) | R$ 2.291,62 | 1 | |
-| **Comercial** | 169.0% (Baixa) | R$ 2.466,82 | 0 | **Ponto Crítico:** Baixa em todas as métricas. |
+2. Performance de Vendas
+Visão detalhada dos Top Performers e KPIs Globais.
 
-### 🔑 Recomendação de Ação
-A área **Comercial** deve ser o foco da otimização. Recomenda-se a implementação de um programa de **Benchmarking Interno** que utilize os métodos e *pipelines* de vendas do Top Performer da **Operações** (ID 47) e as estratégias de negociação da área **Administrativo** para elevar a produtividade e o valor dos contratos do setor.
+Benchmark de Talento: O setor de Operações destaca-se por abrigar o colaborador com maior carteira ativa (6 contratos), servindo de modelo para o programa de cross-training sugerido.
+
+![Performance de Vendas](performance_de_vendas.png)
+
+3. Visão por Área & Produtividade
+Gráficos comparativos de Ticket Médio e relação Contratos vs. Quadro de Funcionários.
+
+Nota Técnica: No Power BI, optou-se pela escala decimal (2,39 contratos/pessoa) para facilitar a leitura executiva, mantendo a integridade com a taxa percentual calculada no modelo Python (239%).
+
+![Visão por Área](visao_por_area.png) 
+
+![Produtividade](produtividade.png)
+
+🛠️ Tecnologias e Origem dos Dados
+
+Fontes de Dados: Integração de múltiplos datasets em formatos .csv (Base de Funcionários e Clientes) e .xlsx (Base de Serviços Prestados).
+
+Python (Pandas): ETL e tratamento de tipos de dados distintos.
+
+Power BI: Modelagem relacional e criação de medidas em DAX.
+
+(Obs: A aba Laboratório foi mantida como página oculta no arquivo .pbix para fins de validação técnica e futuras expansões de métricas.)
