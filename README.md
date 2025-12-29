@@ -35,7 +35,7 @@ Nota Técnica: No Power BI, optou-se pela escala decimal (2,39 contratos/pessoa)
 
 ![Visão por Área](visao_por_area.png) 
 
-![Produtividade](produtividade.png)
+![Produtividade](produtividade_v2.png)
 
 🛠️ Tecnologias e Origem dos Dados
 
