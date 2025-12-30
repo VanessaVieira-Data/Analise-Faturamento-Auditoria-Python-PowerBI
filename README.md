@@ -2,7 +2,7 @@
 
 > **Note:** This project was originally developed in Portuguese. You can find the full English documentation below, followed by the original Portuguese version.
 
-[English Version](#english-version) | [Versão em Português](#versão-em-português)
+[English Version](#english-version) | [Versão em Português](#versao-em-portugues)
 
 ---
 
