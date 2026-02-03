@@ -74,7 +74,7 @@ Um diferencial deste projeto foi a fase de Conciliação e Auditoria de Dados:
 #### 1. Sumário Executivo & Direcionais Estratégicos
 A "Home" do projeto foca em insights acionáveis.
 
-* **Insight**: Identificquei que a plena integração dos 15 profissionais restantes pode elevar o faturamento anual de R$ 5,5 Milhões para R$ 6,6 Milhões.
+* **Insight**: Identifiquei que a plena integração dos 15 profissionais restantes pode elevar o faturamento anual de R$ 5,5 Milhões para R$ 6,6 Milhões.
 
 ![Sumário Executivo](sumario_executivo.png)
 
