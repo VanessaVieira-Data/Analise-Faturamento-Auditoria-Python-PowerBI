@@ -14,7 +14,7 @@ This project delivers an **end-to-end data analysis solution**, combining Python
 ### 🏗️ Methodology & Data Governance
 A key differentiator of this project was the Data Reconciliation and Auditing phase:
 
-* **Referential Integrity**: A controlled variance was identified between the revenue calculated in Python (R$ 5.62M) and Power BI (R$ 5.52M). This difference reflects stricter filtering criteria within the dashboard to display only contracts with a "Confirmed Billing" status.
+* **Referential Integrity**: The total revenue was validated through cross-checking between Python and Power BI, showing full convergence of values (R$ 5.52M). This consistency confirms the accuracy of the data merging process and the correct application of business rules across both tools.
 * **💡Validation Strategy**: Data cleaning was performed on two fronts: **Python** for initial auditing and type casting, and **Power Query** to ensure the dashboard's self-sufficiency through double-check validation.
 * **Scalability & Flexibility**: Utilizing `.merge(how='left')` and `.groupby().size()` in Python ensured zero data loss during the ETL phase, allowing a holistic view of the raw data before applying business rules.
 
@@ -63,7 +63,7 @@ Este projeto representa uma **análise end-to-end**, unindo o poder de processam
 
 Um diferencial deste projeto foi a fase de Conciliação e Auditoria de Dados:
 
-* **Integridade Referencial**: Identificou-se uma variação controlada entre o faturamento calculado em Python (R$ 5,62M) e o Power BI (R$ 5,52M). Essa diferença reflete critérios de filtragem mais rigorosos no dashboard para exibir apenas contratos com status de "Faturamento Confirmado".
+* **Integridade Referencial**: O faturamento total foi validado através de dupla checagem entre Python e Power BI, apresentando total convergência nos valores (R$ 5,52M). Essa consistência confirma a precisão do cruzamento das bases e a correta aplicação das regras de negócio em ambas as ferramentas.
 
 * **💡 Estratégia de Validação**: Neste projeto, realizei o tratamento de dados em duas frentes: utilizei **Python** para uma auditoria inicial e tratamento de tipos, e repliquei a lógica no **Power Query** para garantir que o Dashboard fosse autossuficiente e validado por dupla checagem.
 
