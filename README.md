@@ -36,9 +36,8 @@ Detailed view of Top Performers and Global KPIs.
 #### 3. Area View & Productivity
 Comparative analysis of Average Ticket and the Ratio of Contracts vs. Headcount.
 
-Technical Note: In Power BI, I chose a decimal scale (2.39 contracts/person) to facilitate executive reading, maintaining integrity with the percentage rate calculated in the Python model (239%).
-
 ![Area View](visao_por_area.png)
+
 ![Productivity](produtividade_v2.png)
 
 ### 🛠️  Technologies & Data Origin
@@ -87,8 +86,6 @@ Visão detalhada dos Top Performers e KPIs Globais.
 
 #### 3. Visão por Área & Produtividade
 Gráficos comparativos de Ticket Médio e relação Contratos vs. Quadro de Funcionários.
-
-Nota Técnica: No Power BI, optou-se pela escala decimal (2,39 contratos/pessoa) para facilitar a leitura executiva, mantendo a integridade com a taxa percentual calculada no modelo Python (239%).
 
 ![Visão por Área](visao_por_area.png) 
 
